@@ -11,7 +11,7 @@ const checkEmail = () => {
     let valid = false;
     const emailValid = email.value.trim();
     if (!isRequired(emailValid)) {
-        showError(email, 'Email cannot be blank bro & sis.');
+        showError(email, 'Email cannot be blank.');
     } else if (!isEmailValid(emailValid)) {
         showError(email, 'Email is not valid.')
     } else {
